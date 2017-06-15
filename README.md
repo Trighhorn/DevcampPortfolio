@@ -1,23 +1,22 @@
 # Devcamp Portfolio Application
 
-Some content
-  
-Things you may want to cover:
+>Ruby on Rails app that allows users to make their own portfolios.
 
-* Ruby version
+###features
 
-* System dependencies
+-real time chat engine for cmments
+-blog
+-portfolios
+-drag and drop interface
 
-* Configuration
+### code EX.
 
-* Database creation
+```ruby
+def my_great_method
+  puts "here it is"
+end
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```javascript
+alert('Hi there');
+```
