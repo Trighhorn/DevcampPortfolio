@@ -18,7 +18,10 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
           
-          <%= video_tag(
+          <div id="background"></div>
+          
+          <!-- Uncomment for vid background -->
+          <!-- <%= video_tag(
               'HardDrivePhotojpeg.mp4',
               id: 'background',
               autoplay: true,
@@ -26,7 +29,7 @@
               muted: true,
               poster: 'rainy_day.gif',
             )
-          %>
+          %> -->
          
           <%= render "shared/application_nav" %>
          
