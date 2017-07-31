@@ -2,6 +2,15 @@
   <div class="container">
     <h1 class="blog-title">My Blog</h1>
     <p class="lead blog-description">Keep up to date with me.</p>
-    <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+    <div class="cbt">
+      <div class="btn btn-primary">
+        <%= link_to "Topics", topics_path %>
+      </div>
+      <% if logged_in?(:site_admin) %>
+        <div class="btn btn-primary">
+          <%= link_to 'Write a New Blog', new_blog_path %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
