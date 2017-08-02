@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "gritter";
+@import "semantic-ui";
 
 
 /*
@@ -215,4 +216,8 @@ h6, .h6 {
   a {
     color: #B22222;
   }
+}
+
+.ui.menu {
+    font-size: 0.65rem;
 }
