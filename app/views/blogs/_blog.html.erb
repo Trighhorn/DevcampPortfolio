@@ -3,14 +3,20 @@
   <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
   
   <% if logged_in?(:site_admin) %>
-    <p class="blog-post-meta">
-    <%= link_to blog.status, toggle_status_blog_path(blog) %> /
-    <%= link_to 'Edit', edit_blog_path(blog) %> /
-    <%= link_to 'Delete Post', blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
-    </p>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-custom btn-sm btn-outline-primary">
+        <%= link_to blog.status, toggle_status_blog_path(blog) %>
+      </button>
+      <button type="button" class="btn btn-custom btn-sm btn-outline-primary">
+        <%= link_to 'Edit', edit_blog_path(blog) %>
+      </button>
+      <button type="button" class="btn btn-custom btn-sm btn-outline-danger">
+        <%= link_to 'Delete Post', blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
+      </button>
+    </div>
   <% end %>
 
   <p>
-    <%= blog.body %>
+    <%= markdown blog.body %>
   </p>
 </div>

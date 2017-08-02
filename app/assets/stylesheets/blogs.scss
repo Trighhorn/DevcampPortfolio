@@ -54,6 +54,7 @@ h6, .h6 {
   font-family: Helvetica;
   a {
     color: #fff;
+    text-decoration: none;
   }
 }
 
@@ -201,4 +202,17 @@ h6, .h6 {
 
 .container {
   font-family: Helvetica;
+}
+
+.btn-custom:hover {
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.btn-outline-danger {
+  a {
+    color: #B22222;
+  }
 }
