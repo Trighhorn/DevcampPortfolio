@@ -221,6 +221,22 @@ body {
    padding: 30px;
  }
  
+ .app-card-container {
+  color: black;
+  text-align: left;
+  a {
+    color: black;
+  }
+  a:hover {
+    color: blue;
+    text-decoration: none;
+  }
+ } 
  
+ .app-card-container > .card {
+   padding: 40px;
+ }
  
- 
+ .profile-img {
+   border: 1px solid grey;
+ }
