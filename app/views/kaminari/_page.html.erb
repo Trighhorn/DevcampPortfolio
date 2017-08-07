@@ -1,5 +1,9 @@
 <% if page.current? %>
-<td class="cur"><span class="csb" style="background-position:-53px 0;width:20px"></span><%= page %></td>
+  <%= link_to url, class: 'item active', title: page, remote: remote do %>
+    <%= page %>
+  <% end %>
 <% else %>
-<td><%= link_to raw(%Q[<span class="csb ch" style="background-position:-74px 0;width:20px"></span>#{page}]), url, :class => 'fl', :remote => remote %></td>
+  <%= link_to url, class: 'item', title: page, remote: remote do %>
+    <%= page %>
+  <% end %>
 <% end %>
